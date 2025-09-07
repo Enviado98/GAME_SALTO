@@ -14,7 +14,6 @@ const config = {
 };
 
 let player, cursors, obstacles, score = 0, scoreText, gameOver = false;
-
 const game = new Phaser.Game(config);
 
 function preload() {
@@ -34,8 +33,6 @@ function create() {
       obs.setVelocityX(-200);
       obs.setImmovable();
       obs.body.allowGravity = false;
-      obs.checkWorldBounds = true;
-      obs.outOfBoundsKill = true;
     },
     loop: true
   });
@@ -63,7 +60,7 @@ function update() {
 
 function endGame() {
   gameOver = true;
-  fetch('https://saltar-al-top.onrender.com/submit', {
+  fetch('/submit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ user_id, username, distance: score })
