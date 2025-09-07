@@ -1,8 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '7703867692:AAH3Z917WlCr0_vU1m3qArDVWd6kXAiWZFU'; // <--- Pon tu token
-const bot = new TelegramBot(token, { polling: true });
 
-const WEB_APP_URL = 'https://saltar-al-top.onrender.com'; // <--- URL de Render
+const token = process.env.TELEGRAM_BOT_TOKEN;
+const WEB_APP_URL = process.env.WEB_APP_URL;
+
+const bot = new TelegramBot(token, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
