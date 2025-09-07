@@ -63,7 +63,7 @@ function update() {
 
 function endGame() {
   gameOver = true;
-  fetch('https://tu-app-render.onrender.com/submit', {
+  fetch('https://saltar-al-top.onrender.com/submit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ user_id, username, distance: score })
