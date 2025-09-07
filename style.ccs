@@ -1,9 +1,15 @@
 body {
-    margin: 0;
-    background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
+
 #game-container {
-    margin: auto;
-    width: 600px;
-    height: 400px;
+  width: 600px;
+  height: 400px;
 }
