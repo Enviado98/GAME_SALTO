@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = 'TU_TELEGRAM_BOT_TOKEN'; // <--- Pon tu token
+const token = '7703867692:AAH3Z917WlCr0_vU1m3qArDVWd6kXAiWZFU'; // <--- Pon tu token
 const bot = new TelegramBot(token, { polling: true });
 
 const WEB_APP_URL = 'https://saltar-al-top.onrender.com'; // <--- URL de Render
