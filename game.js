@@ -62,7 +62,7 @@ function hitObstacle() {
 }
 
 function sendDistance() {
-    fetch('https://saltar-al-top.onrender.com', {
+    fetch('https://saltar-al-top.onrender.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_id, username, distance })
